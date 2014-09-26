@@ -1,0 +1,119 @@
+@notify-default-color:#A4D2F1;
+@notify-success-color:#88E043;
+@notify-error-color:#F73E4D;
+@notify-warning-color:#FFE974;
+.jsbyz-notify-container {
+    position: absolute;
+    top: 30px;
+    left:0;
+    right:0;
+    margin: auto;
+}
+.jsbyz-notify-container > div {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 3px 3px 3px 10px;
+    margin-top: 1px;
+    box-shadow: 2px 2px 2px #a75;
+    border-radius: 4px;
+    display:none;
+}
+.jsbyz-notify-container > div > a{
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;
+    color:#789;
+}
+.jsbyz-notify-default {
+    background-color: @notify-default-color; 
+}
+
+.jsbyz-notify-success {
+    background-color: @notify-success-color; 
+}
+
+.jsbyz-notify-error {
+    background-color: @notify-error-color; 
+}
+
+.jsbyz-notify-warning {
+    background-color: @notify-warning-color; 
+}
+
+
+
+
+
+;
+/*******************
+* progress
+*********************/
+@nice-blue:#5b83AD;
+@light-blue:@nice-blue + #131;
+@back-box-color:rgba(0, 0, 0, 0.5);
+@front-box-color:#2380BE;
+@progress-bar-color:#586D83;
+@progress-color:#4EEC74;
+@progress-button-color:#EEDED0;
+@front-box-height: 80px;
+@progress-radio:10px;
+
+.pro-back-box {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: @back-box-color;
+
+}
+
+.pro-front-box {
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    right: 0;
+    margin:auto;
+    width: 50%;
+    min-width: 300px;
+    height: @front-box-height;
+    z-index: 4;
+    background-color: @front-box-color;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px #876;
+
+}
+
+.pro-progress-bar {
+    position: relative;
+    width: 90%;
+    top:10px;
+    margin: auto;
+    background-color: @progress-bar-color;
+    border-radius: @progress-radio;
+}
+
+.pro-progress {
+    background-color: @progress-color;
+    width: 0;
+    height: 100%;
+    margin: 0;
+     border-radius: @progress-radio;
+}
+.pro-btn-box {
+    position: relative;
+    top: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+.pro-btn-box > button {
+    font-size: 18px;
+    background-color: @progress-button-color;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
